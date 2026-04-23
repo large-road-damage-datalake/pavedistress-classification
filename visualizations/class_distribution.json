@@ -1,0 +1,28 @@
+{
+  "type": "bar",
+  "title": "Class Distribution",
+  "data": {
+    "labels": [
+      "Background",
+      "Crack",
+      "Other",
+      "Patch",
+      "Pothole"
+    ],
+    "values": [
+      2784,
+      824,
+      956,
+      1205,
+      263
+    ],
+    "total": 6032,
+    "percentages": [
+      46.15,
+      13.66,
+      15.85,
+      19.98,
+      4.36
+    ]
+  }
+}

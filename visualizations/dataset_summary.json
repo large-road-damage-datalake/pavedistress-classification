@@ -1,0 +1,18 @@
+{
+  "total_images": 6032,
+  "total_annotations": 6032,
+  "total_classes": 5,
+  "splits_breakdown": {
+    "data": {
+      "images": 6032,
+      "annotations": 6032,
+      "classes": {
+        "Background": 2784,
+        "Crack": 824,
+        "Other": 956,
+        "Patch": 1205,
+        "Pothole": 263
+      }
+    }
+  }
+}

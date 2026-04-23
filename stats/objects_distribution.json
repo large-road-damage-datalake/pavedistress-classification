@@ -1,0 +1,38 @@
+{
+  "type": "heatmap",
+  "title": "Objects on images - distribution for every class",
+  "x_labels": [
+    "0",
+    "1"
+  ],
+  "y_labels": [
+    "Background",
+    "Patch",
+    "Other",
+    "Crack",
+    "Pothole"
+  ],
+  "z": [
+    [
+      3248,
+      2784
+    ],
+    [
+      4827,
+      1205
+    ],
+    [
+      5076,
+      956
+    ],
+    [
+      5208,
+      824
+    ],
+    [
+      5769,
+      263
+    ]
+  ],
+  "description": "Value = number of images where class has exactly x objects."
+}

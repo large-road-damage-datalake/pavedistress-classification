@@ -1,0 +1,49 @@
+{
+  "type": "matrix",
+  "labels": [
+    "Background",
+    "Crack",
+    "Other",
+    "Patch",
+    "Pothole"
+  ],
+  "data": [
+    [
+      2784,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      824,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      956,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1205,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      263
+    ]
+  ],
+  "title": "Co-occurrence Matrix",
+  "description": "Cell [i,j] is number of images that contain both classes i and j."
+}

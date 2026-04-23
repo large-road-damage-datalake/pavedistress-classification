@@ -1,0 +1,176 @@
+{
+  "samples": [
+    {
+      "file": "sample_01_c1_Crack.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Crack\\Transverse crack\\13.3845612.jpg",
+      "classes": [
+        "Crack"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_02_c1_Patch.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Patch\\468.4915952.jpg",
+      "classes": [
+        "Patch"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_03_c1_Crack.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Crack\\Longitudial crack\\1535.8123592.jpg",
+      "classes": [
+        "Crack"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_04_c1_Background.png",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Background\\469.6212596.png",
+      "classes": [
+        "Background"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_05_c1_Other.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Other\\1.3010760.jpg",
+      "classes": [
+        "Other"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_06_c1_Background.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Background\\470.5402736.jpg",
+      "classes": [
+        "Background"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_07_c1_Pothole.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Pothole\\1536.0126836.jpg",
+      "classes": [
+        "Pothole"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_08_c1_Background.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Background\\479.7097616.jpg",
+      "classes": [
+        "Background"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_09_c1_Other.jpg",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Other\\0.7537980.jpg",
+      "classes": [
+        "Other"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    },
+    {
+      "file": "sample_10_c1_Background.png",
+      "source": "D:/PhD/Datasets/classification/PaveDistress\\Background\\0.6051036.png",
+      "classes": [
+        "Background"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 686
+      },
+      "resized_from": {
+        "width": 3854,
+        "height": 2065
+      }
+    }
+  ],
+  "count": 10,
+  "slider_pairs": 0
+}

@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0",
+  "basic_info": {
+    "id": "pavedistress-classification",
+    "name": "PaveDistress",
+    "short_name": "pavedistress-cls",
+    "description": "Classification packaging of PaveDistress with image-level pavement distress labels across crack, patch, pothole, other, and background categories.",
+    "year": 2024
+  },
+  "project_context": {
+    "task": "classification",
+    "tasks": [
+      "classification"
+    ],
+    "damage_types": [
+      "crack",
+      "pothole"
+    ],
+    "task_classification": {
+      "primary_task": "classification"
+    },
+    "label_taxonomy_version": "road_damage_v2"
+  },
+  "imaging_setup": {
+    "camera": "Specialized pavement inspection vehicle with Basler raL2048-80km line-scan camera and infrared laser-assisted lighting",
+    "camera_viewpoint": [
+      "top-down"
+    ],
+    "resolution": "3854x2065",
+    "lighting_conditions": "Daylight, dusk, tunnels, and cloudy conditions",
+    "capture_height_mm": "Not reported",
+    "geotagged": false,
+    "resolution_details": [
+      {
+        "resolution": "3854x2065",
+        "count": 6032
+      }
+    ]
+  },
+  "annotation_schema": [
+    {
+      "type": "classification",
+      "description": "Image-level pavement distress category labels from folder names",
+      "classes": [
+        {
+          "id": 0,
+          "name": "Background",
+          "description": "Road surface without visible target distress",
+          "color": "#00AA00",
+          "canonical_name": "class.negative",
+          "instances": 2784
+        },
+        {
+          "id": 1,
+          "name": "Crack",
+          "description": "PaveDistress class: crack-related distress",
+          "color": "#FF0000",
+          "canonical_name": "crack",
+          "instances": 824
+        },
+        {
+          "id": 2,
+          "name": "Other",
+          "description": "PaveDistress class: other distress patterns",
+          "color": "#C468DF",
+          "canonical_name": "class.unknown",
+          "instances": 956
+        },
+        {
+          "id": 3,
+          "name": "Patch",
+          "description": "PaveDistress class: repaired/patch area",
+          "color": "#EDB751",
+          "canonical_name": "repair.general",
+          "instances": 1205
+        },
+        {
+          "id": 4,
+          "name": "Pothole",
+          "description": "PaveDistress class: pothole distress",
+          "color": "#497A8B",
+          "canonical_name": "pothole",
+          "instances": 263
+        }
+      ]
+    }
+  ],
+  "class_taxonomy": {
+    "version": "road_damage_v2",
+    "classes": [
+      {
+        "canonical_name": "class.negative",
+        "display_name": "Negative",
+        "damage_family": "unknown",
+        "damage_subtype": "negative",
+        "role": "negative",
+        "semantic_role": "absence",
+        "training_role": "negative",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "Background",
+          "negative",
+          "normal",
+          "intact"
+        ],
+        "source_labels": [
+          "Background"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
+        "is_damage_target": true,
+        "aliases": [
+          "Crack",
+          "crack"
+        ],
+        "source_labels": [
+          "Crack"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "class.unknown",
+        "display_name": "Unknown",
+        "damage_family": "unknown",
+        "damage_subtype": "unknown",
+        "role": "unknown",
+        "semantic_role": "unknown",
+        "training_role": "ignore",
+        "status": "provisional",
+        "is_damage_target": false,
+        "aliases": [
+          "Other",
+          "other",
+          "unknown"
+        ],
+        "source_labels": [
+          "Other"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "lossy",
+        "mapping_confidence": "medium"
+      },
+      {
+        "canonical_name": "repair.general",
+        "display_name": "Repair",
+        "damage_family": "patch_repair",
+        "damage_subtype": "generic",
+        "role": "repair",
+        "semantic_role": "repair",
+        "training_role": "context",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "Patch",
+          "patch",
+          "Repair"
+        ],
+        "source_labels": [
+          "Patch"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
+      {
+        "canonical_name": "pothole",
+        "display_name": "Pothole",
+        "damage_family": "pothole",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
+        "is_damage_target": true,
+        "aliases": [
+          "Pothole",
+          "pothole"
+        ],
+        "source_labels": [
+          "Pothole"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      }
+    ],
+    "damage_types": [
+      "crack",
+      "pothole"
+    ],
+    "unresolved_labels": []
+  },
+  "statistics": {
+    "n_images": 6032,
+    "n_annotations": 6032,
+    "n_images_with_annotations": 6032,
+    "average_annotations_per_image": 1,
+    "dataset_size": "9.78 GB",
+    "dataset_size_bytes": 10502931994,
+    "dataset_file_count": 6032,
+    "image_format": "image_folder",
+    "class_distribution": {
+      "Background": 2784,
+      "Crack": 824,
+      "Other": 956,
+      "Patch": 1205,
+      "Pothole": 263
+    },
+    "split": {
+      "data": {
+        "n_images": 6032,
+        "percentage": 1,
+        "n_images_with_annotations": 6032,
+        "annotation_coverage": 1,
+        "dataset_size": "9.78 GB",
+        "dataset_size_bytes": 10502931994,
+        "dataset_file_count": 6032
+      }
+    }
+  },
+  "geographic_coverage": {
+    "countries": [
+      {
+        "name": "China",
+        "image_count": 1087,
+        "annotated_image_count": 1087,
+        "annotation_coverage": 1
+      }
+    ],
+    "temporal_scope": "Published 2024"
+  },
+  "quality_assurance": {
+    "annotation_quality": "Labels provided by source dataset categories under real-world pavement conditions",
+    "inter_annotator_agreement": "Not reported",
+    "review_status": "Published dataset"
+  },
+  "authors": [
+    {
+      "name": "Zhen Liu",
+      "affiliation": "Southeast University",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Wenxiu Wu",
+      "affiliation": "Highway, Port and Transportation Management Center",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Xingyu Gu",
+      "affiliation": "Southeast University",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Bingyan Cui",
+      "affiliation": "The State University of New Jersey",
+      "role": "Dataset Creator"
+    }
+  ],
+  "license": "CC BY 4.0",
+  "links": {
+    "github": "https://github.com/large-road-damage-datalake/pavedistress-classification",
+    "download": "https://data.mendeley.com/datasets/f46zt2g83x/1",
+    "doi": "https://doi.org/10.17632/f46zt2g83x.1",
+    "paper": "https://www.sciencedirect.com/science/article/pii/S2352340924010734",
+    "homepage": "https://data.mendeley.com/datasets/f46zt2g83x/1"
+  },
+  "citation": {
+    "bibtex": "@dataset{liu2024pavedistress,\n  author = {Liu, Zhen and Wu, Wenxiu and Gu, Xingyu and Cui, Bingyan},\n  title = {PaveDistress: A comprehensive dataset of pavement distresses detection},\n  year = {2024},\n  publisher = {Mendeley Data},\n  version = {1},\n  doi = {10.17632/f46zt2g83x.1},\n  url = {https://doi.org/10.17632/f46zt2g83x.1}\n}",
+    "article_bibtex": "@article{liu2024pavedistress_dib,\n  title = {PaveDistress: A comprehensive dataset of pavement distresses detection},\n  author = {Liu, Zhen and Wu, Wenxiu and Gu, Xingyu and Cui, Bingyan},\n  journal = {Data in Brief},\n  volume = {57},\n  pages = {111111},\n  year = {2024},\n  doi = {10.1016/j.dib.2024.111111},\n  url = {https://www.sciencedirect.com/science/article/pii/S2352340924010734}\n}"
+  },
+  "tags": [
+    "classification",
+    "pavement-distress",
+    "pavedistress",
+    "china",
+    "top-down",
+    "mendeley-data"
+  ],
+  "source_publication": {
+    "dataset_doi": "10.17632/f46zt2g83x.1",
+    "article_doi": "10.1016/j.dib.2024.111111",
+    "article_title": "PaveDistress: A comprehensive dataset of pavement distresses detection",
+    "journal": "Data in Brief",
+    "year": 2024
+  }
+}

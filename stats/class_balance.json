@@ -1,0 +1,54 @@
+{
+  "columns": [
+    "Class",
+    "Images",
+    "Objects",
+    "Count on image, average",
+    "Area on image, average (%)"
+  ],
+  "data": [
+    [
+      "Background",
+      2784,
+      2784,
+      1.0,
+      0.0
+    ],
+    [
+      "Patch",
+      1205,
+      1205,
+      1.0,
+      0.0
+    ],
+    [
+      "Other",
+      956,
+      956,
+      1.0,
+      0.0
+    ],
+    [
+      "Crack",
+      824,
+      824,
+      1.0,
+      0.0
+    ],
+    [
+      "Pothole",
+      263,
+      263,
+      1.0,
+      0.0
+    ]
+  ],
+  "description": "Images column counts images containing at least one object of class.",
+  "options": {
+    "sort": {
+      "columnIndex": 2,
+      "order": "desc"
+    },
+    "pageSize": 100
+  }
+}
